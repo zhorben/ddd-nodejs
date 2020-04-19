@@ -1,0 +1,6 @@
+{
+  "watch": ["app"],
+  "ext": "js",
+  "ignore": ["app/**/*.spec.js"],
+  "exec": "node ./index.js"
+}
