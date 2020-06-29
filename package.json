@@ -13,8 +13,6 @@
     "lint:code": "yarn eslint \"./**/*.{js,jsx}\""
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.3.5",
-    "@commitlint/config-conventional": "^8.3.4",
     "@yarnpkg/pnpify": "^2.0.0-rc.20",
     "babel-eslint": "^10.1.0",
     "commitizen": "^4.0.4",
@@ -36,11 +34,6 @@
     "trailingComma": "all",
     "singleQuote": true
   },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
@@ -53,8 +46,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint-staged",
-      "commit-msg": "yarn commitlint -E HUSKY_GIT_PARAMS"
+      "pre-commit": "yarn lint-staged"
     }
   },
   "dependencies": {
