@@ -10,7 +10,6 @@ class InMemoryStore {
   }
 
   async set(rate) {
-
     const key = this.getKey(rate.from, rate.to, rate.date)
 
     return this.store.set(key, rate)

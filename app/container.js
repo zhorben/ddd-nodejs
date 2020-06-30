@@ -15,7 +15,7 @@ container.register({
   exchangeManager: awilix.asClass(ExchangeManager),
   exchangeRateRepo: awilix.asClass(ExchangeRateRepository),
   exchangeRateRemoteApi: awilix.asClass(ExchangeRatesApiIo),
-  exchangeRateLocalStore: awilix.asClass(InMemoryStore)
+  exchangeRateLocalStore: awilix.asClass(InMemoryStore),
 })
 
 module.exports = container
