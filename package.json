@@ -30,23 +30,14 @@
     "nodemon": "^2.0.3",
     "prettier": "^2.0.4"
   },
-  "prettier": {
-    "trailingComma": "all",
-    "singleQuote": true
-  },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
   },
-  "lint-staged": {
-    "*.{tsx,ts,js,jsx,scss,css,js,json,md}": [
-      "yarn prettier --write"
-    ]
-  },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint-staged"
+      "pre-commit": "pretty-quick --staged"
     }
   },
   "dependencies": {
