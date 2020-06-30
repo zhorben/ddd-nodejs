@@ -1,16 +1,16 @@
-const Price = require('./Price');
+const Price = require('./Price')
 
 function convert(price, targetCurrency, exchangeRate) {
   if (
     targetCurrency.label !== exchangeRate.to.label ||
     price.currency.label !== exchangeRate.from.label
   ) {
-    throw new Error('Invalid ExchangeRate');
+    throw new Error('Invalid ExchangeRate')
   }
 
-  const newValue = price.value * exchangeRate.rate;
+  const newValue = price.value * exchangeRate.rate
 
-  return new Price(newValue, targetCurrency);
+  return new Price(newValue, targetCurrency)
 }
 
-module.exports = convert;
+module.exports = convert

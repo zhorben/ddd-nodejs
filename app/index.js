@@ -1,3 +1,3 @@
-const start = require('./presentation/http');
+const start = require('./presentation/http')
 
-start();
+start()

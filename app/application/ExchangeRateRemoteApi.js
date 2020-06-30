@@ -1,3 +1,3 @@
-const ExchangeRateRemoteApi = require('../infrastructure/remoteApi/ExchangeRateRemoteApi');
+const ExchangeRateRemoteApi = require('../infrastructure/remoteApi/ExchangeRateRemoteApi')
 
-module.exports = ExchangeRateRemoteApi;
+module.exports = ExchangeRateRemoteApi
