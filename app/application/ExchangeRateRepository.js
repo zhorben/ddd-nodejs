@@ -1,9 +1,6 @@
-const ExchangeRate = require('../domain/ExchangeRate')
-const ExchangeRateRemoteApi = require('./ExchangeRateRemoteApi')
-
 class ExchangeRateRepository {
-  constructor() {
-    this.apiClient = new ExchangeRateRemoteApi()
+  constructor({ exchangeRateRemoteApi }) {
+    this.apiClient = exchangeRateRemoteApi
   }
 
   async get(from, to, date) {

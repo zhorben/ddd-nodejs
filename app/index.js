@@ -1,3 +1,6 @@
 const start = require('./presentation/http')
+const container = require('./container')
 
-start()
+const manager = container.resolve('exchangeManager')
+
+start(manager)

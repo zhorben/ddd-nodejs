@@ -1,9 +1,8 @@
-const ExchangeRateRepository = require('./ExchangeRateRepository')
 const convert = require('../domain/convert')
 
 class ExchangeManager {
-  constructor() {
-    this.repo = new ExchangeRateRepository()
+  constructor({ exchangeRateRepo }) {
+    this.repo = exchangeRateRepo
   }
 
   async convert(price, targetCurrency) {
